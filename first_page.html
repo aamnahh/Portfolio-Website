@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\7TH SEMESTER\New folder\Portfolio-Website\CSS\styles.css">
     <title>Amna Mudasser</title>
 </head>
 <body>
-    
+    <section class="nav">
+        <div class="nav__bar">
+            <div class="nav__logo">My Portfolio Website</div>
+            <div class="nav__list">
+                <li class="nav__items"><a href="#home">Home</a></li>
+                <li class="nav__items"><a href="#about">About</a></li>
+                <li class="nav__items"><a href="#work">Work</a></li>
+                <li class="nav__items"><a href="#contact">Contact</a></li>
+            </div>
+        </div>
+    </section>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="home__text">
+              <ul class="home__text1">Hi, I'm Amna!</ul>
+              <ul class="home__text2">Welcome to my portfolio website! I am a passionate web
+                developer who is just starting out on an exciting journey.</ul>
+            </div>
+            <div class="home__img"><img src="E:\7TH SEMESTER\portfolio\1.png" alt=""></div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container" style="background-color: #2E3B65;">
+            <div class="about__img"><img src="E:\7TH SEMESTER\portfolio\2.png" alt=""></div>
+            <div class="about__text">This is my website</div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="container">
+            <div class="work__text">This is my work</div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+       
+            <h2>Contact Me</h2>
+        <form>
+          <ul><label for="name">Name:</label>
+            <input type="text" id="name" name="name" /></ul>
+  
+          <ul><label for="email">Email:</label>
+            <input type="email" id="email" name="email" /></ul>
+  
+          <ul><label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea></ul>
+  
+          <input id="submit" type="submit" value="Send" />
+        </form>
+          
+      </section>
+
 </body>
 </html>
