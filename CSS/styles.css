@@ -21,6 +21,7 @@ section {
     padding-right: 10%;
     padding-left: 10%;
     flex-direction: row;
+    align-content: center;
 }
 
 .nav {
@@ -87,79 +88,6 @@ section {
     width: 450px;
 }
 
-.about__text1 {
-    font-size: 50px;
-    font-weight: 300;
-    color: #E4EBF5;
-    padding-bottom: 25rem;
-}
-
-.about__text1 a:hover {
-    color: #E4EBF5;
-    text-decoration: underline;
-}
-
-.about__text2 {
-    font-size: 20px;
-    color: #E4EBF5;
-    position: relative;
-    top: 50px;
-    right: 100px;
-}
-
-.about__text3 {
-    font-size: 20px;
-    color: #E4EBF5;
-    position: relative;
-    top: 50px;
-    right: 20px;
-}
-
-.about__text4 {
-    font-size: 20px;
-    color: #E4EBF5;
-    position: relative;
-    top: 50px;
-    left: 90px;
-}
-
-.about__img img {
-    padding-top: 1rem;
-    width: 450px;
-}
-
-.work__text1 {
-    font-size: 3rem;
-    font-weight: 600;
-    color: #2E3B65;
-    padding-left: 50px;
-    padding-bottom: 350px;
-}
-
-.work__text2 {
-    font-size: 20px;
-    color: #2E3B65;
-    position: relative;
-    top: 50px;
-    right: 300px;
-}
-
-.work__text3 {
-    font-size: 20px;
-    color: #2E3B65;
-    position: relative;
-    top: 50px;
-    right: 200px;
-}
-
-.work__text4 {
-    font-size: 20px;
-    color: #2E3B65;
-    position: relative;
-    top: 50px;
-    right: 10px;
-}
-
 .contact {
     font-size: 1.6rem;
     font-weight: 200;
@@ -173,3 +101,93 @@ section {
 .submit {
     font-size: 3rem;
 }
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+  /* background-color: DodgerBlue; */
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.flex-container section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 10px;
+  flex: 1 0 250px;
+  border: 1px solid #cccccc;
+}
+
+.flex-container section img {
+  width: 100%;
+}
+
+.flex-container section header {
+  padding: 20px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.flex-container section header h2 {
+  font-size: 1.8rem;
+}
+
+.flex-container section header p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.flex-container section a {
+    background: #0080ff;
+    align-self: stretch;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem; 
+    border-bottom: 4px solid #0066cc;
+}
+
+.hide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  top: -10000;
+}
+ 
+.footer ul {
+  max-width: 640px;
+  margin: 2em auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer ul li {
+  list-style: none;
+  align-self: flex-end;
+}
+
+.footer ul li a {
+  text-decoration: none;
+}
+
+.footer p {
+  font-size: 0.7em;
+}
+
+.footer svg {
+  width: 30%;
+}
+
